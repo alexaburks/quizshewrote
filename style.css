@@ -1,0 +1,171 @@
+/* Imported Murder, She Wrote fonts */
+@font-face {
+  font-family: artGothicExtraBold;
+  src: url(fonts/ArtGothicExtraBold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: artGothicBold;
+  src: url(fonts/ArtGothicBold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: artGothicNormal;
+  src: url(fonts/ArtGothicNormal.ttf);
+  font-style: normal;
+}
+
+
+/* Body */
+body {
+  background-color: #EBEBEB;
+  color: black;
+  margin-top: 50px;
+  padding: 0;
+}
+
+
+/* Header */
+header section div {
+  text-align: center;
+}
+
+header div h1 {
+  font-family: artGothicExtraBold;
+  font-size: 250%;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  font-family: artGothicNormal;
+  font-size: 125%;
+  display: inline-block;
+  padding: 0;
+}
+
+header ul li span {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 100%;
+}
+
+header ul .li-margin-right {
+  margin-right: 1%;
+}
+
+header ul .li-margin-left {
+  margin-right: 1%;
+}
+
+
+/* Main */
+main {
+  height: 50%;
+}
+
+main .start-page {
+  text-align: center;
+}
+
+main h2 {
+  font-family: artGothicBold;
+  font-size: 175%;
+}
+
+main img.msw-gif {
+  width: 250px;
+  margin-bottom: 23.24px;
+}
+
+main button {
+  background-color: black;
+  font-family: artGothicNormal;
+  font-size: 125%;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 23.24px;
+}
+
+main #js-question-form {
+  text-align: center;
+}
+
+main #js-question-form p {
+  font-family: artGothicNormal;
+  font-size: 150%;
+}
+
+main form fieldset {
+  text-align: left;
+  width: 255px;
+  border: 0;
+  margin-right: auto;
+  margin-bottom: 23.24px;
+  margin-left: auto;
+}
+
+main form label {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 140%;
+  font-weight: normal;
+  position: relative;
+}
+
+
+/* Custom Radio Buttons */
+main form input[type="radio"] {
+  opacity: 0;
+}
+
+main form label::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  top: 6px;
+}
+
+main form label::after {
+  content: "";
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  position: absolute;
+  left: -22px;
+  top: 9px;
+}
+
+main form input[type="radio"] + label::after {
+  content: none;
+}
+
+main form input[type="radio"]:checked + label::after {
+  content: "";
+}
+
+main form input[type="radio"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+} 
+
+
+/* Footer */
+footer {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 75%;
+  text-align: center;
+}
